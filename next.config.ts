@@ -4,17 +4,14 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  // Enable the App Router (default in Next 15)
-  experimental: {
-    appDir: true,
-    serverActions: true,
-  },
-  // Optimize images via the built‑in Image component
+  // Enable Turbopack (empty config) to silence warnings
+  turbopack: {},
   images: {
     remotePatterns: [{ protocol: "https", hostname: "*" }],
   },
-  // Enable absolute imports using @/*
   webpack(config) {
+    // Ensure resolve exists
+    config.resolve = config.resolve || {};
     config.resolve.alias = {
       ...(config.resolve.alias || {}),
       "@": path.resolve(__dirname, "./"),
