@@ -3,9 +3,6 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
-  // Enable Turbopack (empty config) to silence warnings
-  turbopack: {},
   images: {
     remotePatterns: [{ protocol: "https", hostname: "*" }],
   },
