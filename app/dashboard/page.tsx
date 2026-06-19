@@ -4,7 +4,7 @@ import CommandPalette from '../components/CommandPalette';
 import BackgroundCanvas from '../components/BackgroundCanvas';
 
 export const metadata = {
-  title: 'Dashboard – Nexus Learning OS',
+  title: 'Dashboard - Nexus Learning OS',
   description: 'Your AI-powered learning command center',
 };
 

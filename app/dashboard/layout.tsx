@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Nexus Learning OS Dashboard",
-  description: "AI‑powered learning operating system"
+  description: "AI-powered learning operating system"
 };
 
 export default function DashboardLayout({
